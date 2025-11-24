@@ -60,7 +60,7 @@ refs.startBtn.addEventListener("click", () => {
   if (!userSelectedDate) return;
 
   refs.startBtn.disabled = true;
-  refs.dateInput.disabled = true; // 🔥 ВИМКНУТИ ПОЛЕ ПРИ СТАРТІ
+  refs.dateInput.disabled = true; 
   startTimer();
 });
 
@@ -72,7 +72,7 @@ function startTimer() {
     if (diff <= 0) {
       clearInterval(timerId);
       updateInterface({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-      refs.dateInput.disabled = false; // 🔥 УВІМКНУТИ ПОЛЕ ПІСЛЯ ЗАВЕРШЕННЯ
+      refs.dateInput.disabled = false; 
       return;
     }
 
